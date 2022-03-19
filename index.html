@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">Pokedex</h1>
+    </div>
+    <div class="pokedex-container">
+        <div class="pokedex-top">
+            <div class="pokedex-top1">
+                <div class="displayoff2" id="displayoff2"></div>
+                <div class="top-display-frame" id="top-display-frame">
+                    <div class="top-display">
+                        <div id="pokeName">POKEMON</div>
+                        <div id="pokeImgContainer">
+                            <img src="./images/pika.png" alt="pokemon" id="pokeImg"">
+                        </div>
+                        <div id="pokeId"></div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <div class="pokedex-bar-container">
+            <div class="pokedex-bar">
+                <div class="bar-item1">
+                    <div class="bar-item1-1"></div>
+                </div>
+                <div class="bar-item2">
+                    <div class="bar-item2-1"></div>
+                <div class="bar-item2-2"></div>
+                </div>            
+            </div> 
+        </div>
+        <div class="pokedex-base">
+            <div class="pokedex-baseL">
+                <button class="btnonoff" id="btnonoff" ><ion-icon name="power"></ion-icon></button>
+            </div>
+            <div class="pokedex-baseC">
+                <div  id="displayoff1" class="displayoff1"></div>
+                <div class="base-display-frame" id="base-display-frame">
+                    <div class="base-display" id="basedisplay">
+                        <div class="data">
+                            <div id="pokeStats" class="pokeStats"></div>
+                            <div class="pokeTypeContainer">
+                                <div class="poketype">
+                                    <p> TYPE:</p>
+                                    <div id="pokeTypes" class="pokeTypes"></div>
+                                </div>
+                                <div class="pokeMovescontainer">
+                                    <p>MOVES:</p>
+                                    <div id="pokeMoves" class="pokeMoves"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="searchPokemon">
+                        <form action="" onsubmit="Search(event)">
+                            <input type="text" placeholder="Buscar un Pokemon" name="pokeName" class="buscar" autocomplete="off">
+                    </div>                   
+                </div>
+            </div>
+            <div class="pokedex-baseR">
+                <div class="pad-container">
+                    <img src="./images/pad.png" alt="pad">
+                </div>
+            </div>
+        </div>
+    </div>  
+    <script src="./js/script.js" type="text/JavaScript" defer></script>
+<footer>
+    <div class="footer-content">
+        <p> Trabajo realizado por Guillermo Parra.</p>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</footer>
+</html>
